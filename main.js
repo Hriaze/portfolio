@@ -31,32 +31,12 @@ $(document).ready(function () {
     $('.portfolio-item-extra').toggleClass('slide-down');
     $('#coll-btn-icon').toggleClass('fa-chevron-down');
     $('#coll-btn-icon').toggleClass('fa-chevron-up');
+
   });
 
   AOS.init({
     easing: 'ease',
     duration: 1800
   })
-/*
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      //this.firstChild.classList.toggle("fa-chevron-down");
-      //this.firstChild.classList.toggle("fa-chevron-up");
-      var content = this.previousElementSibling;
-      for (i = 0; i < 2; i++){
-        if (content.style.display === "flex") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "flex";
-        }
-        content = content.previousElementSibling;
-      }
-
-    });
-  }
-*/
 });
