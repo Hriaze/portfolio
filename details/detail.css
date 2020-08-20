@@ -121,7 +121,7 @@ header{
   width: 80%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
@@ -133,6 +133,35 @@ header{
   padding: 0 1rem;
 }
 
+.nav-collapsible{
+  margin: 0;
+  position: absolute;
+  align-self: center;
+  left: 48%;
+  top: 22%;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+details[open] summary ~ * {
+  animation: open 1s ease-in-out;
+}
+
+@keyframes open {
+  0% {opacity: 0; margin-top: -100px}
+  100% {opacity: 1; margin-top: 0px}
+}
+
+details {
+  background-color: rgb(40, 40, 40);
+  font-size: 1.5rem;
+}
+.nav-collapsible details > summary {
+  background-color: black;
+  font-weight: bolder;
+}
 .nav-link:hover{
   background-color: rgba(255,255,255, 0.2);
 }
@@ -232,6 +261,25 @@ header{
 .portfolio-img img{
   max-height: 40rem;
   object-fit: contain;
+  justify-content: center;
+}
+
+.grid2-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2-img img{
+  max-height: 20rem;
+}
+
+.grid3-img{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid3-img img{
+  max-height: 20rem;
 }
 
 .portfolio-description{
@@ -325,6 +373,53 @@ header{
 .alt-img{
   display: none;
 }
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-color);
+  padding: 2rem 0;
+  position: relative;
+}
+
+.up{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.up i{
+  color: var(--main-color);
+  font-size: 2rem;
+  margin: auto;
+}
+
+.copyright p{
+  font-size: 1.4rem;
+}
+
+
+
+
+@keyframes pulse {
+  0%{
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+  }
+}
+
 
 * {
   box-sizing: border-box;
@@ -524,6 +619,10 @@ ol, li {
 
   .nav-link{
     font-size: 1rem;
+  }
+
+  .nav-collapsible{
+    top: 36%;
   }
 
   .about-container{

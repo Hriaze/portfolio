@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IvyRoxe design's details</title>
+    <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap" rel="stylesheet">
@@ -23,13 +24,24 @@
             </div>
             <h6>Riaze2</h6>
           </a></li>
-          <li><a href="#floating" class="nav-link">Floating</a></li>
-          <li><a href="#integrated" class="nav-link">Integrated</a></li>
-          <li><a href="#main-design" class="nav-link">Main</a></li>
-          <li><a href="../index.html#contact" class="nav-link"><b>Contact</b></a></li>
+          <li>
+            <div dir="rtl" class="nav-collapsible">
+              <details>
+                <summary><a href="#main-title" class="nav-link nav-title">IvyRoxe</a></summary>
+                <a href="#floating" class="nav-link">Floating</a><br>
+                <a href="#integrated" class="nav-link">Integrated</a><br>
+                <a href="#guide" class="nav-link">Guide</a><br>
+                <a href="#main-design" class="nav-link">Main</a><br>
+              </details>
+            </div>
+          </li>
+          <li>
+            <a href="../list/list.html" class="nav-link"><b>List</b></a>
+            <a href="../index.html#contact" class="nav-link"><b>Contact</b></a>
+          </li>
         </ul>
       </nav>
-      <div class="main-title">
+      <div class="main-title" id="main-title">
         <h1>IvyRoxe</h1>
         <div class="main-links">
           <a href="#" id="link-1">Implemented in a Chaturbate template</a>
@@ -49,7 +61,7 @@
         <div class="portfolio-item">
           <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
             <div class="alt-img">
-              <img src="ivyroxe-res/buttons.PNG" alt="">
+              <img src="ivyroxe-res/buttons.png" alt="">
             </div>
             <div class="carousel" aria-label="Gallery">
               <ol class="carousel__viewport">
@@ -57,7 +69,7 @@
                     tabindex="0"
                     class="carousel__slide">
                     <div class="carousel__slide_content">
-                      <img src="ivyroxe-res/buttons.PNG" alt="">
+                      <img src="ivyroxe-res/buttons.png" alt="">
                     </div>
                   <div class="carousel__snapper">
                     <a href="#carousel__slide4"
@@ -82,7 +94,7 @@
                     tabindex="0"
                     class="carousel__slide">
                     <div class="carousel__slide_content">
-                      <img src="ivyroxe-res/side-bar.PNG" alt="">
+                      <img src="ivyroxe-res/side-bar.png" alt="">
                     </div>
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide2"
@@ -94,7 +106,7 @@
                     tabindex="0"
                     class="carousel__slide">
                     <div class="carousel__slide_content">
-                      <img src="ivyroxe-res/title.PNG" alt="">
+                      <img src="ivyroxe-res/title.png" alt="">
                     </div>
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide3"
@@ -164,11 +176,11 @@
                 Riaze2<br/>
               </font>
               <ul class="bigtips">
-                <li><img src="ivyroxe-res/red-tip.PNG" alt=""></li>
-                <li><img src="ivyroxe-res/darkpurple-tip.PNG" alt=""></li>
-                <li><img src="ivyroxe-res/lightpurple-tip.PNG" alt=""></li>
-                <li><img src="ivyroxe-res/darkblue-tip.PNG" alt=""></li>
-                <li><img src="ivyroxe-res/lightblue-tip.PNG" alt=""></li>
+                <li><img src="ivyroxe-res/red-tip.png" alt=""></li>
+                <li><img src="ivyroxe-res/darkpurple-tip.png" alt=""></li>
+                <li><img src="ivyroxe-res/lightpurple-tip.png" alt=""></li>
+                <li><img src="ivyroxe-res/darkblue-tip.png" alt=""></li>
+                <li><img src="ivyroxe-res/lightblue-tip.png" alt=""></li>
               </ul>
             </div>
           </div>
@@ -214,6 +226,27 @@
       </div>
     </section>
 
+    <section  class="portfolio" id="guide">
+      <div class="container">
+        <div class="section-heading">
+          <h1>User's guide</h1>
+          <h6>List of steps to simply modify the bio</h6>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <h6>user's guide</h6>
+            <h1>Presentation in PowerPoint</h1>
+            <p>
+              To be able to modify lists, gifs, background, button's position ... a guide in the form of a PowerPoint presentation was delivered with step by step instructions. The model can modify simple aspects of her bio easily and most importantly independtly.
+            </p>
+          </div>
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+            <img src="ivyroxe-res/thn-presentation.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="main-design" id="main-design">
       <div class="container">
         <div class="section-heading">
@@ -226,11 +259,12 @@
       </div>
     </section>
 
-
-
-
-
-
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2020 Riaze2</p>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
